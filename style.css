@@ -1,0 +1,109 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 550px;
+    height: 600px;
+    padding-top: 10%;
+    margin: 0 auto;
+    background: peachpuff;
+    padding: 0.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 2rem rgb(102, 105, 105);
+}
+h1{
+    background:  #081b31;;
+    font-size: 3rem;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    opacity: 0.9;
+    font-weight: 600;
+    text-align: center;
+    line-height: 5rem;
+}
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6rem 1rem;
+}
+.choice{
+    height: 150px;
+    width: 150px;  
+    margin: 0.5rem;
+    border-radius: 50%;
+    
+}
+#rock img{
+    border: 4px solid#F083A2;
+}
+#paper img {
+    border: 4px solid rgb(195, 142, 220);
+}
+#scissors img {
+    border: 4px solid #7FACFF;
+}
+.choice:hover{
+    /* opacity: 0.5; */
+    cursor: pointer;
+    background: white;
+}
+img{
+    height: 150px;
+    width: 150px;
+    padding: 0.59rem;
+    object-fit: cover;
+    border-radius: 50%;
+ 
+}
+.msg-container{
+    text-align: center;
+}
+#msg{
+    background: #000;
+    color: white;
+    height: 5rem;
+    font-size: 2rem;
+    text-align: center;
+    display: inline;
+    padding: 1rem;
+    border-radius: 10px;
+}
+@media (max-width : 321px) {
+    html{
+        font-size: 49%;
+    }
+    .container{
+        padding-top: 5%;
+        width: 300px;
+        margin: 0 auto;
+        
+    }
+    img{
+        width: 95px;
+        height: 95px;
+    }
+    h1{
+        font-size: 5rem;
+    }
+    .choices{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 6rem 1rem;
+    }
+    .choice{
+        height: 95px;
+        width: 95px;  
+        margin: 0.5rem;
+        border-radius: 50%;
+        
+    }
+    #msg{
+        font-size: 2.5rem;
+    }
+}
